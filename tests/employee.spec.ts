@@ -13,7 +13,8 @@ test('Navigate to Employee List', async ({ page }) => {
   const rowCount = await page.locator('.orangehrm-employee-list .oxd-table-body .oxd-table-card').count();
   expect(rowCount).toBeGreaterThan(0);
 
-  // Screenshot of dashboard
+  // Screenshot of employee list
+  await page.waitForLoadState('networkidle');
   await page.screenshot({ path: 'screenshots/employee-list.png' });
 });
 
@@ -22,13 +23,14 @@ test('View employee details', async ({ page }) => {
   
     
   // Wait for table to load - use simpler selector
-  await page.waitForSelector('.orangehrm-employee-list .oxd-table-body .oxd-table-card', { timeout: 3000 });
+  await page.waitForSelector('.orangehrm-employee-list .oxd-table-body .oxd-table-card', { timeout: 5000 });
   
   // Click first employee
   await page.locator('.orangehrm-employee-list .oxd-table-body .oxd-table-card').first().click();
   await expect(page.getByRole('heading', { name: 'Personal Details' })).toBeVisible();
   // Screenshot of employee details
-  await page.screenshot({ path: 'screenshots/single-employee-details.png' });
+  await page.waitForLoadState('networkidle');
+  await page.screenshot({ path: 'screenshots/employee-details.png' });
 });
 
 test('Search employee by name', async ({ page }) => {

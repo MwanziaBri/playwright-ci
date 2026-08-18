@@ -12,6 +12,7 @@ setup('authenticate user', async ({ page }) => {
   // Wait for dashboard
   await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
   // Screenshot of dashboard
+  await page.waitForLoadState('networkidle');
   await page.screenshot({ path: 'screenshots/dashboard-success.png', fullPage: false });
   
   // Save auth state
