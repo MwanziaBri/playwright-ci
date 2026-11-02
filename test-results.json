@@ -1,8 +1,8 @@
 {
   "config": {
-    "configFile": "C:\\Users\\BrianMwanzia\\Downloads\\playwright-ci\\playwright.config.ts",
-    "rootDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/tests",
-    "forbidOnly": false,
+    "configFile": "/home/runner/work/playwright-ci/playwright-ci/playwright.config.ts",
+    "rootDir": "/home/runner/work/playwright-ci/playwright-ci/tests",
+    "forbidOnly": true,
     "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
@@ -10,21 +10,17 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/test-results",
+        "outputDir": "/home/runner/work/playwright-ci/playwright-ci/test-results",
         "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "retries": 2,
+        "metadata": {},
         "id": "setup",
         "name": "setup",
-        "testDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/tests",
+        "testDir": "/home/runner/work/playwright-ci/playwright-ci/tests",
         "testIgnore": [],
         "testMatch": [
           "/.*\\.setup\\.ts/"
@@ -32,15 +28,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/test-results",
+        "outputDir": "/home/runner/work/playwright-ci/playwright-ci/test-results",
         "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "retries": 2,
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/tests",
+        "testDir": "/home/runner/work/playwright-ci/playwright-ci/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -48,15 +42,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/test-results",
+        "outputDir": "/home/runner/work/playwright-ci/playwright-ci/test-results",
         "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "retries": 2,
+        "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/tests",
+        "testDir": "/home/runner/work/playwright-ci/playwright-ci/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -64,15 +56,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/test-results",
+        "outputDir": "/home/runner/work/playwright-ci/playwright-ci/test-results",
         "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
+        "retries": 2,
+        "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "C:/Users/BrianMwanzia/Downloads/playwright-ci/tests",
+        "testDir": "/home/runner/work/playwright-ci/playwright-ci/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -106,7 +96,7 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.59.1",
     "workers": 1,
     "webServer": null
@@ -129,22 +119,8 @@
               "expectedStatus": "passed",
               "projectId": "setup",
               "projectName": "setup",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14835,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-18T11:00:04.662Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "17e3fe6f4d9d8bd79c6b-75a0657db6abc6631f47",
@@ -171,22 +147,8 @@
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 11495,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-18T11:00:20.802Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "d748ac400d08b85935ef-eb14cd304e213b962382",
@@ -205,25 +167,91 @@
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 15319,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-18T11:00:32.370Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "d748ac400d08b85935ef-7ca2062280e4a748e2f0",
+          "file": "auth.spec.ts",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "User is on the login page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-9bcd7a38310cb36c27be",
+          "file": "auth.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "Invalid login attempt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-f9b1bdc7335ce8e498ce",
+          "file": "auth.spec.ts",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "User is on the login page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-5154915a6bfea7fc00bd",
+          "file": "auth.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "Invalid login attempt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-7e17665da3a319f2a377",
           "file": "auth.spec.ts",
           "line": 14,
           "column": 5
@@ -247,22 +275,8 @@
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 12487,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-18T11:00:47.746Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "3c37713e1e72b903cb86-0a6adcaeb50d3b52e2eb",
@@ -281,22 +295,8 @@
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 17080,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-18T11:01:00.278Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "3c37713e1e72b903cb86-4d0f291e4b385a7e0999",
@@ -315,25 +315,131 @@
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14028,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-18T11:01:17.401Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "3c37713e1e72b903cb86-2e15c22bdf33fa0d86f8",
+          "file": "employee.spec.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "Navigate to Employee List",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3c37713e1e72b903cb86-30f5378ff00d860543f8",
+          "file": "employee.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "View employee details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3c37713e1e72b903cb86-9c6696b224cde567d4d5",
+          "file": "employee.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "Search employee by name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3c37713e1e72b903cb86-36bdc2f7ddd09d5b279e",
+          "file": "employee.spec.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "Navigate to Employee List",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3c37713e1e72b903cb86-170351b66bd52feabaec",
+          "file": "employee.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "View employee details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3c37713e1e72b903cb86-a6d2eb5f3a8dbe9f8443",
+          "file": "employee.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "Search employee by name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "3c37713e1e72b903cb86-44ccfc187b0b1ccc46d5",
           "file": "employee.spec.ts",
           "line": 36,
           "column": 5
@@ -343,10 +449,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-18T11:00:02.164Z",
-    "duration": 89371.45399999991,
-    "expected": 6,
-    "skipped": 0,
+    "startTime": "2026-11-02T11:29:38.832Z",
+    "duration": 63.374000000000024,
+    "expected": 0,
+    "skipped": 16,
     "unexpected": 0,
     "flaky": 0
   }
