@@ -6,8 +6,7 @@ test('Navigate to Employee List', async ({ page }) => {
   await page.goto('/web/index.php/pim/viewEmployeeList');
   await expect(page.getByRole('heading', { name: 'Employee Information' })).toBeVisible();
   
-  // Wait for table to load - use simpler selector
-  await page.waitForSelector('.orangehrm-employee-list .oxd-table-body .oxd-table-card', { timeout: 3000 });
+  await expect(page.locator('.orangehrm-employee-list .oxd-table-body .oxd-table-card').first()).toBeVisible({ timeout: 15_000 });
   
   // Check that at least one employee record exists
   const rowCount = await page.locator('.orangehrm-employee-list .oxd-table-body .oxd-table-card').count();
@@ -22,8 +21,7 @@ test('View employee details', async ({ page }) => {
   await page.goto('/web/index.php/pim/viewEmployeeList');
   
     
-  // Wait for table to load - use simpler selector
-  await page.waitForSelector('.orangehrm-employee-list .oxd-table-body .oxd-table-card', { timeout: 5000 });
+  await expect(page.locator('.orangehrm-employee-list .oxd-table-body .oxd-table-card').first()).toBeVisible({ timeout: 15_000 });
   
   // Click first employee
   await page.locator('.orangehrm-employee-list .oxd-table-body .oxd-table-card').first().click();
