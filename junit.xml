@@ -1,26 +1,20 @@
-<testsuites id="" name="" tests="5" failures="0" skipped="5" errors="0" time="0.07829200000000003">
-<testsuite name="auth.spec.ts" timestamp="2026-11-12T13:51:04.611Z" hostname="webkit" tests="2" failures="0" skipped="2" time="0" errors="0">
-<testcase name="User is on the login page" classname="auth.spec.ts">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="Invalid login attempt" classname="auth.spec.ts">
-<skipped>
-</skipped>
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="89.37145399999991">
+<testsuite name="auth.setup.ts" timestamp="2026-08-18T11:00:03.529Z" hostname="setup" tests="1" failures="0" skipped="0" time="14.835" errors="0">
+<testcase name="authenticate user" classname="auth.setup.ts" time="14.835">
 </testcase>
 </testsuite>
-<testsuite name="employee.spec.ts" timestamp="2026-11-12T13:51:04.611Z" hostname="webkit" tests="3" failures="0" skipped="3" time="0" errors="0">
-<testcase name="Navigate to Employee List" classname="employee.spec.ts">
-<skipped>
-</skipped>
+<testsuite name="auth.spec.ts" timestamp="2026-08-18T11:00:03.529Z" hostname="chromium" tests="2" failures="0" skipped="0" time="26.814" errors="0">
+<testcase name="User is on the login page" classname="auth.spec.ts" time="11.495">
 </testcase>
-<testcase name="View employee details" classname="employee.spec.ts">
-<skipped>
-</skipped>
+<testcase name="Invalid login attempt" classname="auth.spec.ts" time="15.319">
 </testcase>
-<testcase name="Search employee by name" classname="employee.spec.ts">
-<skipped>
-</skipped>
+</testsuite>
+<testsuite name="employee.spec.ts" timestamp="2026-08-18T11:00:03.529Z" hostname="chromium" tests="3" failures="0" skipped="0" time="43.595" errors="0">
+<testcase name="Navigate to Employee List" classname="employee.spec.ts" time="12.487">
+</testcase>
+<testcase name="View employee details" classname="employee.spec.ts" time="17.08">
+</testcase>
+<testcase name="Search employee by name" classname="employee.spec.ts" time="14.028">
 </testcase>
 </testsuite>
 </testsuites>
